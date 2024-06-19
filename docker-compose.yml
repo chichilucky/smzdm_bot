@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  smzdm_bot:
+    image: enwaiax/smzdm_bot
+    container_name: smzdm_bot
+    restart: on-failure
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "1"
+    env_file:
+      - .env
+    # volumes:
+    #   - ./app/config/config.toml:/smzdm_bot/config/config.toml
