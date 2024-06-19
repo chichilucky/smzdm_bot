@@ -1,5 +1,8 @@
 # 什么值得买每日签到脚本
+特别鸣谢！
+根据 https://github.com/enwaiax/smzdm_bot 项目作为模板
 
+根据 https://github.com/Remoyang/smzdm_bot 项目修改而来
 <p>
     <img src="https://img.shields.io/github/actions/workflow/status/Chasing66/smzdm_bot/checkin.yml?label=CheckIn">
     <img src="https://img.shields.io/github/actions/workflow/status/Chasing66/smzdm_bot/build.yml?label=Build">
@@ -24,7 +27,7 @@
 
 - 每日签到, 额外奖励，随机奖励
 - 多种运行方式: GitHub Action, 本地运行，docker， 青龙面板
-- 多种通知方式: `pushplus`, `server酱`,`企业微信bot-webhook`, `telegram bot`(支持自定义反代`Telegram Bot API`. [搭建教程](https://anerg.com/2022/07/25/reverse-proxy-telegram-bot-api-using-cloudflare-worker.html))
+- 多种通知方式: `pushplus`， `server酱`，`企业微信bot-webhook`， `telegram bot`(支持自定义反代`Telegram Bot API`。 [搭建教程](https://anerg.com/2022/07/25/reverse-proxy-telegram-bot-api-using-cloudflare-worker.html))
 - 支持多账号(需配置`config.toml`)
 
 ## 2. 配置
