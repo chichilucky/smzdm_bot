@@ -9,13 +9,13 @@ on:
 
   # UTC时间，对应Beijing时间 8：30
   schedule:
-   - cron: "13 0 * * *"
+      - cron: "26 23 * * *"
 
 jobs:
   run:
     runs-on: ubuntu-latest
     container:
-      image: remoyang/smzdm_bot
+      image: enwaiax/smzdm_bot
       env:
         ANDROID_COOKIE: ${{ secrets.ANDROID_COOKIE }}
         SK: ${{ secrets.SK }}
