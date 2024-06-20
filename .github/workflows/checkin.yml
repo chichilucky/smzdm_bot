@@ -1,5 +1,3 @@
-# 每天8:20执行
-# UTC 时间，北京时间需要 UTC+8
 name: Check in
 
 on:
@@ -9,8 +7,9 @@ on:
     types:
       - completed
 
-   schedule:
-       - cron: '20 0 * * *'
+  # UTC时间，对应Beijing时间 8：30
+  schedule:
+   - cron: "13 0 * * *"
 
 jobs:
   run:
