@@ -46,7 +46,7 @@ class NotifyBot(object):
             logger.warning("⚠️ SC_KEY not set, skip ServerChain notification")
             return
         SC_KEY = self.kwargs.get("SC_KEY")
-        url = f"http://sc.ftqq.com/{SC_KEY}.send"
+        url = f"https://sctapi.ftqq.com/{SC_KEY}.send"
         data = {"text": self.title, "desp": self.content}
         try:
             resp = requests.post(url, data=data)
