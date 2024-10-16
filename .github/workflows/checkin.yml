@@ -9,16 +9,18 @@ on:
 
   # UTC时间，对应Beijing时间 8：30
   schedule:
-      - cron: "26 23 * * *"
+    - cron: "30 23 * * *"
 
 jobs:
   run:
     runs-on: ubuntu-latest
     container:
-      image: enwaiax/smzdm_bot
+      # image: enwaiax/smzdm_bot
+      image: lxxxm/smzdm_bot
       env:
         ANDROID_COOKIE: ${{ secrets.ANDROID_COOKIE }}
         SK: ${{ secrets.SK }}
+        HLH_OPENID: ${{ secrets.HLH_OPENID }}
         PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
         SC_KEY: ${{ secrets.SC_KEY }}
         TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
