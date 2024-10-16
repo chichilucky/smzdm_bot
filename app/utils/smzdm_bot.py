@@ -9,6 +9,7 @@ import requests
 
 class SmzdmBot:
     SIGN_KEY = "apr1$AwP!wRRT$gJ/q.X24poeBInlUJC"
+    # SIGN_KEY = "zok5JtAq3$QixaA%mncn*jGWlEpSL3E1"
 
     def __init__(self, ANDROID_COOKIE: str, SK=None, **kwargs):
         self.cookies = unquote(ANDROID_COOKIE)

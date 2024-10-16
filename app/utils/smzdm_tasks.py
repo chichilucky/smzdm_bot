@@ -118,7 +118,10 @@ class SmzdmTasks:
     def extra_reward(self):
         continue_checkin_reward_show = False
         userdata_v2 = self._show_view_v2()
+        if not userdata_v2:
+            return
         try:
+            logger.info(f"userdata_v2:{userdata_v2}")
             for item in userdata_v2["data"]["rows"]:
                 if item["cell_type"] == "18001":
                     continue_checkin_reward_show = item["cell_data"][
@@ -136,5 +139,6 @@ class SmzdmTasks:
     def _show_view_v2(self):
         url = "https://user-api.smzdm.com/checkin/show_view_v2"
         resp = self.bot.request("POST", url)
+        logger.info(f"resp:{resp.text}")
         if resp.status_code == 200 and int(resp.json()["error_code"]) == 0:
             return resp.json()
