@@ -15,7 +15,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     container:
-      image: enwaiax/smzdm_bot
+      image: chichilucky/smzdm_bot
       env:
         ANDROID_COOKIE: ${{ secrets.ANDROID_COOKIE }}
         SK: ${{ secrets.SK }}
