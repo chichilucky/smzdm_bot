@@ -2,6 +2,9 @@
 特别鸣谢！
 根据 https://github.com/enwaiax/smzdm_bot 项目作为模板
 
+
+根据 https://github.com/kid1126/smzdm_bot 项目修改而来
+
 根据 https://github.com/Chochipscat/smzdm_bot 项目修改而来
 
 根据 https://github.com/Remoyang/smzdm_bot 项目作为参考
