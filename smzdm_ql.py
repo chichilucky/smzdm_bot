@@ -15,7 +15,10 @@ repo_dir = Path(ql_repo_dir, repo_name)
 
 def main():
     os.system(
-        f"cd {str(repo_dir)}; pip3 install -qr app/requirements.txt; python3 app/main.py"
+        f"cd {str(repo_dir)}; "
+        f"pip3 install -q --upgrade pip; "
+        f"pip3 install -qe .; "
+        f"smzdm-bot"
     )
 
 
